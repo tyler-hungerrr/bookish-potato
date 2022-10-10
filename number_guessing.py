@@ -26,8 +26,9 @@ if top_of_range.isdigit():
 
 random_num = (random.randrange(0, top_of_range)) #generates a number
 
-
-while True:
+guesses = 0
+while True: #loop where player guesses the number
+    guesses += 1
     player_guess = input("Make a guess ")
     input_num(player_guess)
     if player_guess.isdigit():
@@ -39,5 +40,9 @@ while True:
     if player_guess == random_num:
         print("You got the right number!")
         break
+    elif player_guess < random_num:
+        print("You were below the random number.")
     else:
-        print("That is the wrong number!")
+        print("You were above the random number.")
+
+print("You got it in", guesses, "guesses")

@@ -1,3 +1,3 @@
 # bookish-potato
-This ia a numbers guessing game that includes
-Try...except blocks as input validation
+This is a numbers guessing game that includes
+Try...except blocks as input validation, If/elif/else statements, random module, while loops
